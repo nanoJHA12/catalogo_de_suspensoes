@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suspensões Automotivas</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link para seu arquivo de estilo CSS -->
+    <link rel="stylesheet" href="site-suspenções.CSS"> <!-- Link para seu arquivo de estilo CSS -->
 </head>
 <body>
     <header>
