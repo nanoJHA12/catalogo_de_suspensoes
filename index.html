@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suspensões Automotivas</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link para seu arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
 
     <style>
-           body {
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
@@ -84,9 +85,36 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+
+.conteiner{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+img{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
     </style>
 </head>
 <body>
+    <div class="carrossel">
+        <div class="container" id="img">
+            <img src="https://images.tcdn.com.br/img/img_prod/1129578/torre_de_suspensao_esquerda_nissan_sentra_2014_295_1_ff7240ecf8b7ad0ca70113a57368b12c_20230621103515.png" alt="">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <img src="https://31b93296e4855c6e.cdn.gocache.net/loja/imagens/full/mola-esportiva-v8-suspensoes-01.png" alt="">
+            <img src="https://i0.wp.com/quatrorodas.abril.com.br/wp-content/uploads/2017/12/amortecedor.jpg?resize&quality=70&strip=info&w=720&ssl=1" alt="">
+            <img src="https://static3.tcdn.com.br/img/img_prod/476243/kit_batente_amortecedor_dianteiro_spin_de_2013_a_2017_841503_1_20201214004947.jpg" alt="">
+    </div>
     <header>
         <h1>Bem-vindo ao Site de Suspensões Automotivas</h1>
         <nav>
